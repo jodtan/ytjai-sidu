@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>YouTube Downloader</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Download YouTube Videos & Audio</h2>
+            <form id="downloadForm">
+                <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL" required>
+                <button type="submit" class="fetch-btn">Fetch Info</button>
+            </form>
+        </section>
+        <section class="content hidden" id="contentSection">
+            <div class="video-preview">
+                <h3>Video Preview</h3>
+                <img id="videoThumbnail" src="" alt="Video Thumbnail">
+                <p id="videoTitle"></p>
+            </div>
+            <div class="format-options">
+                <label for="formatQuality">Select Format & Quality:</label>
+                <select id="formatQuality"></select>
+                <button id="downloadButton" class="download-btn">Download</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 YouTube Downloader</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

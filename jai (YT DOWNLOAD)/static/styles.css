@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #f05454;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: #e0e0e0;
+}
+
+.hero .fetch-btn {
+    padding: 10px 20px;
+    background-color: #f05454;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.video-preview img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.format-options select {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: #e0e0e0;
+}
